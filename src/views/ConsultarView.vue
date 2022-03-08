@@ -1,5 +1,5 @@
 <template>
-  <h2>Vista Consultar</h2>
+  
   <ConsultarComponent/>
 </template>
 

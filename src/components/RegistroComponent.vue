@@ -1,5 +1,4 @@
 <template>
-  <h3>Componente registro</h3>
 
   <form @submit.prevent="guardar">
     <div class="mb-3">
@@ -32,16 +31,17 @@
         v-model="registro.comentarios"
       />
     </div>
+    <label for="">Elige una categoria : </label>
     <select
       class="form-select"
       aria-label="Default select example"
       v-model="registro.curso"
     >
-      <option selected>Elige un curso</option>
-      <option value="Java">Java</option>
-      <option value=".Net">.Net</option>
-      <option value="Angular">Angular</option>
-      <option value="Android">Android</option>
+      
+      <option value="estudiante">estudiante</option>
+      <option value="profesor">profesor</option>
+      <option value="desarrollador">desarrollador</option>
+      <option value="parado">parado</option>
     </select>
     <div class="mb-3 form-check">
       <input

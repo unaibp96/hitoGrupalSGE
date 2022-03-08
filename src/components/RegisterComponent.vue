@@ -1,5 +1,5 @@
 <template>
-  <h3>Registro de usuario nuevo</h3>
+  <h3>Registro de usuario nuevo </h3>
 
   <form @submit.prevent="registrar">
     <div class="mb-3">
@@ -48,9 +48,17 @@ export default {
         firebase
         .auth()
         .createUserWithEmailAndPassword(this.usuario.email, this.usuario.password)
-        .then(()=>{console.log("registro ok")})
+        .then(()=>{alert("registro ok")})
     },
   },
   setup() {},
 };
 </script>
+
+
+<style scoped>
+form {
+  width: 40%;
+  margin: 0 auto;
+}
+</style>

@@ -1,5 +1,6 @@
 <template>
-  <h3>Login de usuario</h3>
+  <h3>Iniciar Sesión:</h3>
+<p>Rellena los campos para acceder a la tabla de contactos.</p>
 
   <form @submit.prevent="logear">
     <div class="mb-3">
@@ -55,3 +56,10 @@ export default {
   setup() {},
 };
 </script>
+
+<style scoped>
+form {
+  width: 40%;
+  margin: 0 auto;
+}
+</style>

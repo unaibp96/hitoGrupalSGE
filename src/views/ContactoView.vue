@@ -1,5 +1,5 @@
 <template>
-  <h2>Vista Contacto</h2>
+
   <ContactoComponent/>
 </template>
 

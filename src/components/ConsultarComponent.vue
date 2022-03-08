@@ -1,14 +1,15 @@
 <template>
-  <h4>Componente consultar</h4>
-
+  
+<h3>Lista de Usuarios: </h3>
 <table class="table" >
   <thead>
     <tr>
       
       <th scope="col">Email</th>
       <th scope="col">Teléfono</th>
-      <th scope="col">Curso</th>
-      <th scope="col">Aceptar</th>
+      <th scope="col">Estatus</th>
+      <th scope="col">Politica aceptada</th>
+       <th scope="col">Comentarios</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,7 @@
       <td>{{ registro.tlf }}</td>
       <td>{{ registro.curso }}</td>
       <td>{{ registro.acepto }}</td>
+      <td>{{ registro.comentarios }}</td>
     </tr>
 
   </tbody>
@@ -46,6 +48,7 @@ export default {
           tlf: data.tlf,
           curso: data.curso,
           acepto: data.acepto,
+          comentarios: data.comentarios
         });
       });
       this.registros = _registros;

@@ -1,11 +1,11 @@
 <template>
   <nav>
     <router-link to="/">Información</router-link> |
-    <router-link to="/registro">Registro</router-link> |
+    <router-link to="/registro">Añadir Usuario</router-link> |
     <router-link to="/contacto">Contacto</router-link> |
-    <router-link to="/consultar">Consultar</router-link> |
-     <router-link to="/register">Acceso privado</router-link> |
-     <router-link to="/login">Login privado</router-link> 
+    <!--<router-link to="/consultar">Tabla de Usuarios</router-link> | -->
+     <router-link to="/register">Registar Sesión</router-link> |
+     <router-link to="/login">Iniciar Sesión</router-link> 
   </nav>
   <router-view/>
 </template>

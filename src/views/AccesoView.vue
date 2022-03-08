@@ -1,5 +1,5 @@
 <template>
-    <h2>Acceso Privado</h2>
+   
     <RegisterComponent/>
     
 </template>
